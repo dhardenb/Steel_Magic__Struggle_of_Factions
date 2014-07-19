@@ -10,6 +10,9 @@
 <center>
 <table width=700>
 <tr>
+<td valign=top>
+<a href="https://docs.google.com/document/d/1sI1Q-hE5yuXE-Aq3blRwdbNm4iPkhAiSXm_E8oYbQdo/edit?usp=sharing">Dev Diary</a>
+</td>
 <td>
 <b>Steel & Magic : Struggle of Factions</b>
 </td>
@@ -44,10 +47,10 @@
 </td>
 </form>
 </td>
-<td valign=bottom>
-
-<form name="registerbutton" method="post" action="/Register/register.php">
-<input type="submit" name="Register" value="Register">
+<td valign=top>
+<a href="https://docs.google.com/document/d/1B7dnQ4XPz6WZArPNVseMFKKIslRCSn-0T1e2fo1ohVc/edit?usp=sharing">Help</a> <br>
+<br><br><form name="registerbutton" METHOD="LINK" action="/securimage/securimage/captcha_registration.php">
+<input type="submit" value="Register">
 </form>
 </td>
 
