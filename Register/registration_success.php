@@ -7,5 +7,5 @@
 
 <a href="..\main_login.php">Go to Login Screen</a>
 
-</cente>
+</center>
 
