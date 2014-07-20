@@ -1,5 +1,5 @@
 <?php
-ob_start();
+
 $host="localhost"; // Host name 
 $username="root"; // Mysql username 
 $password="vikings8629"; // Mysql password 
@@ -45,6 +45,6 @@ echo $mainloginlink;
 
 }
 
-ob_end_flush();
+
 ?>
 

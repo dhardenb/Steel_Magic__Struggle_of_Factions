@@ -5,7 +5,7 @@
       <paths name="107.21.117.89">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/Fantasy Empires/website" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
