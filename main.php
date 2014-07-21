@@ -52,7 +52,7 @@ else
 {
 echo "Welcome, ";
 echo $_SESSION['myusername'];
-echo "<br<br>";
+
 }
 
 
@@ -81,11 +81,51 @@ include '\faction\checkfaction.php';
 </table>
 <hr>
 
+<!--------------------------------------------------------------------------------------------------------------!>
+<!---------------------This is where the Header Ends -----------------------------------------------------------!>
+
 <br><br>
 
+<centeR>
+<table width=1000>
+<tr>
+<td>
+<font name=Verdanna>
+<h3>
+Faction Status</h3></font>
+</td>
+</tr>
+<tr>
+<td>
+
+<table width=400>
+<tr>
+<td valign=top>
+<?php
+
+session_register("factionname");
+$factionname = $_SESSION['factionname'];
+echo $factionname
 
 
-<Br><br>
+?>
+
+</td>
+<td halign=right valign=top>
+<dd>
+<a href="\faction\delete_faction.php"><img src="\images\delete.gif""></a>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</center>
+
+
+
+
 
 
 
