@@ -25,7 +25,7 @@
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td colspan="3"><strong>Member Registration</strong></td>
+<td colspan="3"><strong><font size=+1>New Member Registration</strong></td></font>
 </tr>
 <tr>
 <td width="78">Username</td>
@@ -40,7 +40,7 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Register">
+<td><input type="submit" name="Submit" value="Submit">
 </td>
 </tr>
 </table>

@@ -50,7 +50,7 @@
 <td valign=top>
 <a href="https://docs.google.com/document/d/1B7dnQ4XPz6WZArPNVseMFKKIslRCSn-0T1e2fo1ohVc/edit?usp=sharing">Help</a> <br>
 <br><br><form name="registerbutton" METHOD="LINK" action="/securimage/securimage/captcha_registration.php">
-<input type="submit" value="Register">
+<input type="submit" value="Register New User">
 </form>
 </td>
 
