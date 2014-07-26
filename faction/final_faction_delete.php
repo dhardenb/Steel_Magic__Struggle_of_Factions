@@ -1,6 +1,6 @@
 <?php
 
-include '\db_connect.php';
+include '../db_connect.php';
 
 $tbl_name="members"; // Table name
 

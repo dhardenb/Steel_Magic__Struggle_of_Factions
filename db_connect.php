@@ -2,8 +2,8 @@
 
 ob_start();
 $host="localhost"; // Host name
-$username="root"; // Mysql username
-$password="vikings8629"; // Mysql password
+$username=file_get_contents("http://107.21.117.89/text/db_user.txt"); // Mysql username
+$password=file_get_contents("http://107.21.117.89/text/db_pass.txt"); // Mysql password
 $db_name="pre_alpha_db"; // Database name
 
 
