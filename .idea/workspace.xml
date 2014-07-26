@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e1cab8-f2b8-4bd3-842d-319973f857d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/audio/.htaccess" afterPath="$PROJECT_DIR$/securimage/securimage/audio/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/database/.htaccess" afterPath="$PROJECT_DIR$/securimage/securimage/database/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/LICENSE.txt" afterPath="$PROJECT_DIR$/securimage/securimage/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/README.FONT.txt" afterPath="$PROJECT_DIR$/securimage/securimage/README.FONT.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/README.txt" afterPath="$PROJECT_DIR$/securimage/securimage/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/WavFile.php" afterPath="$PROJECT_DIR$/securimage/securimage/WavFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db_connect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faction/addfaction.php" afterPath="$PROJECT_DIR$/faction/addfaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/captcha.html" afterPath="$PROJECT_DIR$/securimage/securimage/captcha.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/example_form.ajax.php" afterPath="$PROJECT_DIR$/securimage/securimage/example_form.ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/example_form.php" afterPath="$PROJECT_DIR$/securimage/securimage/example_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/database/index.html" afterPath="$PROJECT_DIR$/securimage/securimage/database/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/securimage.php" afterPath="$PROJECT_DIR$/securimage/securimage/securimage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/securimage_play.php" afterPath="$PROJECT_DIR$/securimage/securimage/securimage_play.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/securimage_show.php" afterPath="$PROJECT_DIR$/securimage/securimage/securimage_show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_html_5_game.php" afterPath="$PROJECT_DIR$/test/test_html_5_game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/securimage/securimage/words/words.txt" afterPath="$PROJECT_DIR$/securimage/securimage/words/words.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faction/checkfaction.php" afterPath="$PROJECT_DIR$/faction/checkfaction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checklogin.php" afterPath="$PROJECT_DIR$/checklogin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Register/checkregistration.php" afterPath="$PROJECT_DIR$/Register/checkregistration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faction/display_faction_people_assets.php" afterPath="$PROJECT_DIR$/faction/display_faction_people_assets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faction/display_faction_structure_assets.php" afterPath="$PROJECT_DIR$/faction/display_faction_structure_assets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faction/final_faction_delete.php" afterPath="$PROJECT_DIR$/faction/final_faction_delete.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Steel_Magic__Struggle_of_Factions.iws" />
@@ -59,14 +50,18 @@
         <option value="$PROJECT_DIR$/securimage/securimage/securimage.php" />
         <option value="$PROJECT_DIR$/securimage/securimage/captcha_registration.php" />
         <option value="$PROJECT_DIR$/main_login.php" />
-        <option value="$PROJECT_DIR$/Register/checkregistration.php" />
         <option value="$PROJECT_DIR$/faction/create_faction.php" />
-        <option value="$PROJECT_DIR$/faction/checkfaction.php" />
         <option value="$PROJECT_DIR$/Register/registration_success.php" />
-        <option value="$PROJECT_DIR$/faction/addfaction.php" />
         <option value="$PROJECT_DIR$/faction/delete_faction.php" />
-        <option value="$PROJECT_DIR$/faction/final_faction_delete.php" />
         <option value="$PROJECT_DIR$/main.php" />
+        <option value="$PROJECT_DIR$/db_connect.php" />
+        <option value="$PROJECT_DIR$/checklogin.php" />
+        <option value="$PROJECT_DIR$/Register/checkregistration.php" />
+        <option value="$PROJECT_DIR$/faction/addfaction.php" />
+        <option value="$PROJECT_DIR$/faction/checkfaction.php" />
+        <option value="$PROJECT_DIR$/faction/display_faction_people_assets.php" />
+        <option value="$PROJECT_DIR$/faction/display_faction_structure_assets.php" />
+        <option value="$PROJECT_DIR$/faction/final_faction_delete.php" />
       </list>
     </option>
   </component>
@@ -110,34 +105,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Steel_Magic__Struggle_of_Factions">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Steel_Magic__Struggle_of_Factions">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Register">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Steel_Magic__Struggle_of_Factions">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="faction">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -337,6 +304,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -344,6 +312,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1598">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -351,6 +320,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -358,6 +328,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1598">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -365,6 +336,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="1394">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -372,6 +344,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1598">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -379,6 +352,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -386,6 +360,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1598">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,6 +368,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="1394">
           <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -400,6 +376,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1598">
           <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -459,24 +436,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checklogin.php">
+    <entry file="file://$PROJECT_DIR$/db_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.28" vertical-offset="0" max-vertical-offset="918">
-          <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
+        <state vertical-scroll-proportion="-9.52" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Register/register.php">
+    <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.2" vertical-offset="255" max-vertical-offset="1377">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/registration_success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="289">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state vertical-scroll-proportion="-10.28" vertical-offset="2327" max-vertical-offset="3196">
+          <caret line="152" column="56" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,62 +456,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faction/addfaction.php">
+    <entry file="file://$PROJECT_DIR$/checklogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.64" vertical-offset="447" max-vertical-offset="952">
-          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Register/checkregistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39405942" vertical-offset="464" max-vertical-offset="969">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faction/create_faction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="44.88" vertical-offset="1122" max-vertical-offset="2227">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faction/delete_faction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="323">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faction/checkfaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.76" vertical-offset="816" max-vertical-offset="1394">
-          <caret line="55" column="48" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faction/final_faction_delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.6" vertical-offset="0" max-vertical-offset="493">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32673267" vertical-offset="1535" max-vertical-offset="2533">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+        <state vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="833">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2455446" vertical-offset="0" max-vertical-offset="1394">
-          <caret line="37" column="81" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="81" />
+        <state vertical-scroll-proportion="27.48" vertical-offset="687" max-vertical-offset="1394">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/final_faction_delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049707603" vertical-offset="0" max-vertical-offset="684">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/display_faction_structure_assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.072135784" vertical-offset="0" max-vertical-offset="707">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/display_faction_people_assets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.072135784" vertical-offset="0" max-vertical-offset="707">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/delete_faction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/create_faction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1499293" vertical-offset="1520" max-vertical-offset="2227">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/checkfaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14427157" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faction/addfaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09618105" vertical-offset="0" max-vertical-offset="2125">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/registration_success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.94766617" vertical-offset="670" max-vertical-offset="1377">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register/checkregistration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048090525" vertical-offset="0" max-vertical-offset="901">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
