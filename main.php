@@ -31,8 +31,8 @@
 </font>
 <br><center>
 <font size=-1><i>
-Pre-Alpha Version 0.0.1
- </font></i></center>
+Pre-Alpha Version 0.0.5
+ </font></i></center55>
 </td>
 <td align=left>
 
@@ -84,23 +84,31 @@ include '\faction\checkfaction.php';
 <!--------------------------------------------------------------------------------------------------------------!>
 <!---------------------This is where the Header Ends -----------------------------------------------------------!>
 
-<br><br>
 
-<centeR>
+
+<center>
+
 <table width=1000>
 <tr>
-<td>
+<td bgcolor=E6E6E6 width=200>
 <font name=Verdanna>
-<h3>
-Faction Status</h3></font>
+<b>
+Faction Status</b></font><br>
+<font size=-2><i>
+<a href="\faction\delete_faction.php">DELETE</a></i></font>
+
+</td>
+<td width=800>
 </td>
 </tr>
 <tr>
 <td>
-
-<table width=400>
+<br>
+<table>
 <tr>
 <td valign=top>
+<b>Name : </b>
+
 <?php
 
 session_register("factionname");
@@ -112,12 +120,43 @@ echo $factionname
 
 </td>
 <td halign=right valign=top>
-<dd>
-<a href="\faction\delete_faction.php"><img src="\images\delete.gif""></a>
+<br><Br>
 </td>
 </tr>
 </table>
 
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td valign=top>
+<b>People : </b><br><br>
+
+<?php
+
+include '\faction\display_faction_people_assets.php';
+
+?>
+
+<br><br>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td valign=top>
+<b>Structures : </b><br><br>
+
+<?php
+
+include '\faction\display_faction_structure_assets.php';
+
+?>
+
+<br><br>
+</td>
+<td>
 </td>
 </tr>
 </table>
