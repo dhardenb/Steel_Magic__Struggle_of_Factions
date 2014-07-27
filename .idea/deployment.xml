@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="107.21.117.89">
+  <component name="PublishConfigData" serverName="Bobby Amazon FTP">
     <serverData>
-      <paths name="107.21.117.89">
+      <paths name="Bobby Amazon FTP">
         <serverdata>
           <mappings>
-            <mapping deploy="/Fantasy Empires/website" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/website" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
