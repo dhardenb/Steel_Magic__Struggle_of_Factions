@@ -20,7 +20,7 @@
 
 
 <center>
-<table width=700>
+<table width=1000>
 <tr>
 <td>
 <a href="https://docs.google.com/document/d/1sI1Q-hE5yuXE-Aq3blRwdbNm4iPkhAiSXm_E8oYbQdo/edit?usp=sharing">Dev Diary</a>
@@ -74,7 +74,13 @@ include '\faction\checkfaction.php';
 
 
 <a href="https://docs.google.com/document/d/1B7dnQ4XPz6WZArPNVseMFKKIslRCSn-0T1e2fo1ohVc/edit?usp=sharing">Help</a> /
-<a href="logout.php">Log Out</a></p>
+<a href="logout.php">Log Out</a>
+
+<?php
+include '\superadmin\check_superadmin_status.php';
+?>
+
+</p>
 
 </td>
 </tr>
