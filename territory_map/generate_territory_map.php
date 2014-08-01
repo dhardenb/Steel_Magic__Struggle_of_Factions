@@ -10,13 +10,15 @@
 
 <script>
 
+Math.seedrandom();
 
-rows = 10;
-columns = 10;
 
-var mountain_level = 20;   ; // universal mountain level to determine mountaineous-ness of the map
-var ocean_level = 20; // universal ocean level to determine the extent of oceans on the map
-var lake_level = 20;
+rows = 20;
+columns = 20;
+
+var mountain_level = (8000 / 20);   ; // universal mountain level to determine mountaineous-ness of the map
+var ocean_level = (8000 / 40); // universal ocean level to determine the extent of oceans on the map
+var lake_level = (8000 / 20);
 
 tile_elevation = new Array(columns); // array that tracks the elevation of a territory
 

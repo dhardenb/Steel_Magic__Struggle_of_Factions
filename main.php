@@ -8,7 +8,7 @@
 
 
 
-<LINK REL=StyleSheet HREF="test.css" TYPE="text/css">
+<script src="http://107.21.117.89/territory_map/draw_territory_map.js"></script>
 
 
 
@@ -94,7 +94,11 @@ include '\superadmin\check_superadmin_status.php';
 
 <center>
 
-<table width=1000>
+<table width = 1200 border=1>
+<tr>
+<td width=250 valign=top>
+
+<table width=250>
 <tr>
 <td bgcolor=E6E6E6 width=200>
 <font name=Verdanna>
@@ -104,7 +108,7 @@ Faction Status</b></font><br>
 <a href="\faction\delete_faction.php">DELETE</a></i></font>
 
 </td>
-<td width=800>
+<td>
 </td>
 </tr>
 <tr>
@@ -166,16 +170,146 @@ include '\faction\display_faction_structure_assets.php';
 </td>
 </tr>
 </table>
+
+
+</td>
+<td valign=top>
+<center>
+<h1>World Map</h1>
+<hr>
+
+<canvas id="draw_map" width="1000" height="600"></canvas>
+
+
+</center>
+
+</td>
+</tr>
+</table>
+
 </center>
 
 
-
-
-
-
-
-
 </body>
+
+<?php
+
+include 'db_connect.php';
+
+$territory_map_array = array();
+
+$columns=20;
+$rows=20;
+
+$c=0;
+while ($c < $columns)
+{
+$r=0;
+while ($r < $rows)
+{
+$read_territory="SELECT elevation from territory_map WHERE x_coord = '$c' AND y_coord = '$r'";
+$read_territory_result=mysql_query($read_territory);
+$num=mysql_numrows($read_territory_result);
+
+$i=0;
+while ($i < $num)
+{
+$t=mysql_result($read_territory_result,$i,'elevation');
+$territory_map_array[$c][$r] = $t;
+$i++;
+}
+$r++;
+}$c++;
+};
+
+?>
+
+<script>
+
+
+//var obj = <?php echo json_encode($php_variable); ?>;
+
+var tile_elevation = <?php echo json_encode($territory_map_array); ?>;
+
+
+
+  var canvas = document.getElementById('draw_map');
+  var context = canvas.getContext('2d');
+
+
+    var ts = 40;
+    var columns = 20;
+    var rows = 20;
+
+
+    function base_tile_color(t_elevation){
+
+            var color;
+
+            if (t_elevation == 0) {
+                color = "rgb(163,211,156)"; // coastal/bottomlands green
+            }
+            else if (t_elevation == 1) {
+                color = "green" // plains  green
+            }
+            else if (t_elevation == 5) {
+                color = "rgba(255,255,255,0.1)";
+            }
+            else if (t_elevation == 4) {
+                color = "rgba(98,63,38,0.5)"; // dark brown
+            }
+            else if (t_elevation == 3) {
+                color = "rgba(139,135,125,0.65)"; // lighter brown
+            }
+            else if (t_elevation == 2) {
+                color = "rgba(150,150,42,0.65)"; // lighter brownish/green
+            }
+            else if (t_elevation == -2) {
+                color = "blue";
+            }
+            else if (t_elevation == -1) {
+                color = "rgb(30,144,255)";
+            }
+            else
+            {
+                color = "rgb(178,54,67)";
+            };
+            return color;
+        };
+
+
+// map drawing  ////////////////////////////////////////////////////////////////////////
+
+
+
+// main draw logic
+
+    context.clearRect(0,0,canvas.width,canvas.height);
+
+    for (var x = 0; x < columns; x++) {
+        for (var y = 0; y < rows; y++) {
+
+
+
+            //drawing the individual tiles that make up the map grid
+
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = 0;
+            context.shadowBlur = 0;
+
+            context.fillStyle = base_tile_color(tile_elevation[x][y]);
+            context.fillRect(ts * x,ts * y,ts,ts);
+
+            context.strokeStyle = "black";
+            context.lineWidth = 1;
+            context.strokeRect(ts * x,ts * y,ts,ts);
+
+        }
+    }
+
+
+
+</script>
 
 
 

@@ -4,8 +4,8 @@
 
 <?php
 
-$columns = 10;
-$rows = 10;
+$columns = 20;
+$rows = 20;
 
 include '..\db_connect.php';
 
@@ -15,11 +15,12 @@ mysql_query($truncate_tables);
 $territory_map_array=json_decode($_POST['elevation']);
 
 
+
 $c=0;
 while ($c < $columns)
 {
   $r=0;
-  while ($r < $columns)
+  while ($r < $rows)
   {
     $e = $territory_map_array[$c][$r];
     $insert_territory="INSERT INTO territory_map(x_coord,y_coord,elevation) VALUES ('$c','$r','$e')";
@@ -30,7 +31,7 @@ while ($c < $columns)
 };
 
 
-
+//echo var_dump($territory_map_array);
 header("location:..\main.php");
 
 ?>
