@@ -4,8 +4,8 @@
 
 <?php
 
-$columns = 20;
-$rows = 20;
+$columns = (int)file_get_contents("http://107.21.117.89/territory_map/territory_columns.txt");
+$rows = (int)file_get_contents("http://107.21.117.89/territory_map/territory_rows.txt");
 
 include '..\db_connect.php';
 

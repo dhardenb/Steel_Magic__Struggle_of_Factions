@@ -13,8 +13,9 @@
 Math.seedrandom();
 
 
-rows = 20;
-columns = 20;
+
+rows = parseInt(<?php echo file_get_contents("http://107.21.117.89/territory_map/territory_rows.txt"); ?>);
+columns = parseInt(<?php echo file_get_contents("http://107.21.117.89/territory_map/territory_columns.txt"); ?>);
 
 var mountain_level = (8000 / 20);   ; // universal mountain level to determine mountaineous-ness of the map
 var ocean_level = (8000 / 40); // universal ocean level to determine the extent of oceans on the map

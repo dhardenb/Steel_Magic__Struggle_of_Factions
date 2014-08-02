@@ -7,11 +7,6 @@
 <title>Steel & Magic : Struggle of Factions</title>
 
 
-
-<script src="http://107.21.117.89/territory_map/draw_territory_map.js"></script>
-
-
-
 </head>
 
 
@@ -94,7 +89,7 @@ include '\superadmin\check_superadmin_status.php';
 
 <center>
 
-<table width = 1200 border=1>
+<table border=1>
 <tr>
 <td width=250 valign=top>
 
@@ -198,8 +193,8 @@ include 'db_connect.php';
 
 $territory_map_array = array();
 
-$columns=20;
-$rows=20;
+$columns = (int)file_get_contents("http://107.21.117.89/territory_map/territory_columns.txt");
+$rows = (int)file_get_contents("http://107.21.117.89/territory_map/territory_rows.txt");
 
 $c=0;
 while ($c < $columns)
@@ -237,9 +232,9 @@ var tile_elevation = <?php echo json_encode($territory_map_array); ?>;
   var context = canvas.getContext('2d');
 
 
-    var ts = 40;
-    var columns = 20;
-    var rows = 20;
+    var ts = parseInt(<?php echo file_get_contents("http://107.21.117.89/territory_map/territory_tile_size.txt"); ?>);
+    var columns = parseInt(<?php echo file_get_contents("http://107.21.117.89/territory_map/territory_columns.txt"); ?>);
+    var rows = parseInt(<?php echo file_get_contents("http://107.21.117.89/territory_map/territory_rows.txt"); ?>);
 
 
     function base_tile_color(t_elevation){
