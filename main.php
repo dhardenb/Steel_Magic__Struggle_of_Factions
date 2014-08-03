@@ -192,6 +192,7 @@ include '\faction\display_faction_structure_assets.php';
 include 'db_connect.php';
 
 $territory_map_array = array();
+$nexus = array();
 
 $columns = (int)file_get_contents("http://107.21.117.89/territory_map/territory_columns.txt");
 $rows = (int)file_get_contents("http://107.21.117.89/territory_map/territory_rows.txt");
@@ -202,7 +203,7 @@ while ($c < $columns)
 $r=0;
 while ($r < $rows)
 {
-$read_territory="SELECT elevation from territory_map WHERE x_coord = '$c' AND y_coord = '$r'";
+$read_territory="SELECT elevation,nexus from territory_map WHERE x_coord = '$c' AND y_coord = '$r'";
 $read_territory_result=mysql_query($read_territory);
 $num=mysql_numrows($read_territory_result);
 
@@ -210,7 +211,9 @@ $i=0;
 while ($i < $num)
 {
 $t=mysql_result($read_territory_result,$i,'elevation');
+$n=mysql_result($read_territory_result,$i,'nexus');
 $territory_map_array[$c][$r] = $t;
+$nexus[$c][$r] = $n;
 $i++;
 }
 $r++;
@@ -225,6 +228,7 @@ $r++;
 //var obj = <?php echo json_encode($php_variable); ?>;
 
 var tile_elevation = <?php echo json_encode($territory_map_array); ?>;
+var tile_nexus = <?php echo json_encode($nexus); ?>;
 
 
 
@@ -295,9 +299,19 @@ var tile_elevation = <?php echo json_encode($territory_map_array); ?>;
             context.fillStyle = base_tile_color(tile_elevation[x][y]);
             context.fillRect(ts * x,ts * y,ts,ts);
 
+            // drawing the grid
             context.strokeStyle = "black";
             context.lineWidth = 1;
             context.strokeRect(ts * x,ts * y,ts,ts);
+
+            //highlighting the nexus tile
+            if (tile_nexus[x][y] == 1)
+            {
+               context.strokeStyle = "red";
+               context.lineWidth = 4;
+               context.strokeRect(ts * x,ts * y,ts - 2,ts - 2);
+
+            };
 
         }
     }
